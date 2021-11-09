@@ -136,7 +136,7 @@ def getCentroid(matrix, clusters):
 
 
 def kmeans(matrix, n):
-    shuffledMatrix = shuffle(matrix, random_state=0)
+    shuffledMatrix = shuffle(matrix, random_state=42)
     centroids = shuffledMatrix[:2,:]
     for _ in range(n):
         c = []
